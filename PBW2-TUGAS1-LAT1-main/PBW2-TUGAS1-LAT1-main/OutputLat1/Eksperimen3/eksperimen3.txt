@@ -1,0 +1,15 @@
+URL	                                 Hasil di Halaman
+/greet	                                    Selamat Pagi, Mahasiswa!, dan ada button untuk kembali ke home
+/greet?name=Budi                            Selamat Pagi, Budi!
+/greet?name=Budi&waktu=Siang            	Selamat Siang, Budi!
+/greet/Ani                              	Halo, Ani!
+/greet/Ani/detail	                        Halo, Ani!
+/greet/Ani/detail?lang=EN	                Halo, Ani!
+
+
+
+**Pertanyaan:**
+
+- URL mana yang pakai `@RequestParam`? /greet  , /greet/Ani/detail/,   /greet/Ani/detail?lang=EN
+- URL mana yang pakai `@PathVariable`? /greet?name=Budi, /greet?name=Budi&waktu=Siang, /greet/Ani/detail , /greet/Ani/detail?lang=EN
+- URL mana yang pakai keduanya? /greet/Ani/detail,   /greet/Ani/detail?lang=EN

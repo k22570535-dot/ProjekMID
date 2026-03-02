@@ -1,0 +1,24 @@
+1. Coba hapus `th:` dari href CSS:
+
+```
+<!-- Dari: -->
+<link rel="stylesheet" th:href="@{/css/style.css}">
+
+<!-- Menjadi: -->
+<link rel="stylesheet" href="/css/style.css">
+```
+1. Jalankan dan buka halaman. Apakah CSS masih ter-load?
+
+   ```
+   CSS masih bekerja?         [Ya/Tidak] YA
+   ```
+
+1. Sekarang coba path yang salah:
+
+```
+<link rel="stylesheet" th:href="@{/css/tidak-ada.css}">
+```
+Apakah halaman error?      [Ya/Tidak] Tidak
+Apakah CSS diterapkan?     [Ya/Tidak] Tidak
+
+Kesimpulan: th:href="@{}" lebih baik karena secara otomatis menangani context path aplikasi (sangat berguna jika aplikasi tidak di-deploy di root). Jika file CSS tidak ada, halaman tetap tampil namun tanpa styling (tampilan HTML polos).

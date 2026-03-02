@@ -1,0 +1,7 @@
+1. Di template mana saja, ubah referensi fragment menjadi nama yang tidak ada
+
+2. Jalankan dan buka halaman tersebut.
+Apakah error?              [Ya/Tidak] YA
+Error message:             Whitelabel Error Page
+
+Kesimpulan: Jika nama fragment salah, Thymeleaf akan akan gagal melakukan rendering halaman dan menampilkan halaman error (White Label Error Page) karena ia tidak bisa menemukan potongan kode yang diminta.

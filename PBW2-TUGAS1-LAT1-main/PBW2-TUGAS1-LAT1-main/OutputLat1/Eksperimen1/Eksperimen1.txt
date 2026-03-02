@@ -1,0 +1,5 @@
+Buka /test/view  → Apa yang muncul?   yang muncul   tulisan "Ini dari @Controller" ada stylenya.
+Buka /test/text  → Apa yang muncul?   sedangkan yang ini muncul tulisan "Ini dari @Controller + @ResponseBody → text langsung" tidak ada stylenya.
+Apa perbedaannya?                     perbedaan keduanya adalah
+                                      test/view Spring menganggap teks yang dikembalikan oleh method adalah nama file view (seperti file .html di folder templates). Spring akan mencari file tersebut, memprosesnya (misalnya lewat Thymeleaf), dan mengirimkan hasilnya sebagai halaman web utuh.
+                                      test/text Anotasi @ResponseBody memberitahu Spring bahwa teks yang dikembalikan oleh method harus dikirim langsung ke badan HTTP response sebagai data mentah
